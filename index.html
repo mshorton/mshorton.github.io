@@ -1,1 +1,199 @@
-<Paste your full HTML code here (already in Canvas)>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isha Horton | Tech Innovator</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <style>
+        :root {
+            --primary: #007acc;
+            --background: #f4f4f4;
+            --text: #333;
+            --accent: #e6f2fb;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+            transition: background 0.3s;
+        }
+
+        nav ul li a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .intro {
+            text-align: center;
+        }
+
+        .profile {
+            width: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            padding: 10px 20px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #ddd;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Isha Horton</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#graphics">Graphics</a></li>
+                <li><a href="#tutoring">Tutoring</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#career">Career</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="intro">
+            <img src="profile-placeholder.jpg" alt="Profile Photo" class="profile">
+            <h1>Hello, I'm Isha Horton</h1>
+            <p>Tech Innovator | Educator | Creator</p>
+        </div>
+    </section>
+
+    <section id="graphics">
+        <h2>Graphics Business</h2>
+        <p>Explore my graphic design portfolio and templates below.</p>
+        <ul>
+            <li><a href="#">Flyer Template</a></li>
+            <li><a href="#">Logo Package</a></li>
+            <li><a href="#">Social Media Kit</a></li>
+        </ul>
+    </section>
+
+    <section id="tutoring">
+        <h2>Tutoring Services</h2>
+        <p>I offer personalized tutoring in computer science, Java, and more. Links to schedule and pricing will go here.</p>
+    </section>
+
+    <section id="education">
+        <h2>My Education</h2>
+        <p>Details about degrees, certifications, and academic achievements.</p>
+    </section>
+
+    <section id="career">
+        <h2>My Career</h2>
+        <p>Highlight your job titles, roles, and notable contributions here.</p>
+    </section>
+
+    <section id="resume">
+        <h2>My Resume</h2>
+        <p><a href="#">Download Resume (PDF)</a></p>
+    </section>
+
+    <section id="research">
+        <h2>Research & Speaking Engagements</h2>
+        <p>Here you'll find my academic research, AI projects, and past presentations.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Isha Horton. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scroll for navigation
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
